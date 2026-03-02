@@ -1,0 +1,56 @@
+<div class="page-hero">
+  <div class="container">
+    <h1 class="section-title">Testimonianze</h1>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Quello che dicono i miei clienti</p>
+  </div>
+</div>
+
+<section class="page-section bg-white">
+  <div class="container">
+
+    <!-- Stats summary -->
+    <div class="rating-summary">
+      <div class="rating-avg">
+        <span class="avg-number">4.9</span>
+        <div class="stars">★★★★★</div>
+        <span class="avg-label">su 5 – {{ reviews.length }} recensioni</span>
+      </div>
+      <div class="rating-bars">
+        <div class="bar-row" *ngFor="let b of ratingBars">
+          <span class="bar-label">{{ b.stars }} ★</span>
+          <div class="bar-track"><div class="bar-fill" [style.width]="b.pct + '%'"></div></div>
+          <span class="bar-count">{{ b.count }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews grid -->
+    <div class="reviews-grid">
+      <div class="review-card" *ngFor="let r of reviews">
+        <div class="review-card__top">
+          <div class="review-avatar">{{ r.initials }}</div>
+          <div class="review-meta">
+            <strong>{{ r.name }}</strong>
+            <span class="review-occasion">{{ r.occasion }}</span>
+          </div>
+          <div class="review-stars">
+            <span *ngFor="let s of getStars(r.rating)" class="star-filled">★</span>
+            <span *ngFor="let s of getEmptyStars(r.rating)" class="star-empty">☆</span>
+          </div>
+        </div>
+        <p class="review-text">"{{ r.text }}"</p>
+        <span class="review-date">{{ r.date }}</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="page-section bg-light-pink">
+  <div class="container cta-review">
+    <h2>Sei un mio cliente?</h2>
+    <p>Lascia la tua recensione e aiuta altri a scoprire Dolce Momento.</p>
+    <a routerLink="/contatti" class="btn-primary">Scrivi una recensione</a>
+  </div>
+</section>

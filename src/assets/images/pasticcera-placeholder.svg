@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="540" viewBox="0 0 400 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCE4EC"/>
+      <stop offset="100%" stop-color="#F5E6BE"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="160" r="100"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="540" fill="url(#bg)"/>
+  <!-- Silhouette placeholder -->
+  <circle cx="200" cy="160" r="100" fill="#F8BBD0"/>
+  <!-- Face -->
+  <circle cx="200" cy="140" r="55" fill="#FFCCBC"/>
+  <!-- Hair -->
+  <path d="M145,125 Q160,75 200,70 Q240,75 255,125" fill="#8D6E63"/>
+  <path d="M145,125 Q140,145 148,165" fill="#8D6E63"/>
+  <path d="M255,125 Q260,145 252,165" fill="#8D6E63"/>
+  <!-- Body (apron) -->
+  <path d="M140,240 Q155,210 200,205 Q245,210 260,240 L270,380 L130,380 Z" fill="#F48FB1"/>
+  <!-- Apron -->
+  <path d="M165,215 Q200,210 235,215 L245,380 L155,380 Z" fill="#FFFAFC" opacity="0.8"/>
+  <!-- Arms -->
+  <path d="M140,240 Q110,270 100,310 Q115,315 120,305 Q130,275 148,255 Z" fill="#FFCCBC"/>
+  <path d="M260,240 Q290,270 300,310 Q285,315 280,305 Q270,275 252,255 Z" fill="#FFCCBC"/>
+  <!-- Hands holding a cake -->
+  <circle cx="100" cy="315" r="14" fill="#FFCCBC"/>
+  <circle cx="300" cy="315" r="14" fill="#FFCCBC"/>
+  <rect x="130" y="300" width="140" height="40" rx="8" fill="#C8A951" opacity="0.7"/>
+  <rect x="140" y="286" width="120" height="18" rx="5" fill="#F48FB1"/>
+  <!-- Chef hat -->
+  <ellipse cx="200" cy="82" rx="40" ry="12" fill="#FFFAFC" stroke="#F0F0F0" stroke-width="1"/>
+  <rect x="168" y="50" width="64" height="35" rx="5" fill="#FFFAFC" stroke="#F0F0F0" stroke-width="1"/>
+  <!-- Gold divider line -->
+  <line x1="60" y1="410" x2="340" y2="410" stroke="#C8A951" stroke-width="1" opacity="0.4"/>
+  <!-- Text -->
+  <text x="200" y="445" font-family="Georgia, serif" font-size="18" fill="#5D3A3A" text-anchor="middle" font-style="italic">Sofia Moretti</text>
+  <text x="200" y="470" font-family="sans-serif" font-size="13" fill="#9E6B6B" text-anchor="middle">Pasticcera Artigianale</text>
+  <text x="200" y="498" font-family="sans-serif" font-size="11" fill="#BFA9A9" text-anchor="middle">Foto in arrivo ✦</text>
+</svg>

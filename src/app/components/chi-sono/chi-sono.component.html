@@ -1,0 +1,50 @@
+<div class="page-hero">
+  <div class="container">
+    <h1 class="section-title">Chi Sono</h1>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">La storia di una passione diventata arte</p>
+  </div>
+</div>
+
+<section class="page-section bg-white">
+  <div class="container chi-sono__layout">
+
+    <div class="chi-sono__photo">
+      <div class="photo-frame">
+        <img src="assets/images/pasticcera-placeholder.svg" alt="Foto pasticcera">
+      </div>
+      <div class="photo-deco"></div>
+    </div>
+
+    <div class="chi-sono__text">
+      <h2>Ciao, sono <span class="gold">Sofia Moretti</span></h2>
+      <p class="intro">Pasticcera artigianale con oltre 10 anni di esperienza, creo dolci su commissione che raccontano storie e celebrano momenti speciali.</p>
+      <p>Sono nata in una famiglia dove la cucina era il cuore della casa. Fin da bambina ho imparato ad amare i profumi della vaniglia, del cioccolato, della cannella. Quella passione non me l'ha tolta nessuno.</p>
+      <p>Dopo aver studiato all'<strong>Istituto Alberghiero di Firenze</strong> e perfezionato la mia tecnica con corsi di patisserie a Parigi, ho deciso di dedicarmi completamente ai dolci personalizzati, quelli che lasciano un ricordo.</p>
+      <div class="chi-sono__stats">
+        <div class="stat"><span class="stat-number">500+</span><span>Dolci realizzati</span></div>
+        <div class="stat"><span class="stat-number">10+</span><span>Anni di esperienza</span></div>
+        <div class="stat"><span class="stat-number">98%</span><span>Clienti soddisfatti</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="page-section bg-light-pink timeline-section">
+  <div class="container">
+    <h2 class="section-title">Il Mio Percorso</h2>
+    <div class="section-divider"></div>
+
+    <div class="timeline">
+      <div class="timeline__item" *ngFor="let item of timeline; let i = index" [class.right]="i % 2 !== 0">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__year">{{ item.year }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#3E2723" opacity="0.08"/>
+  <rect width="400" height="300" fill="#FFF8E1"/>
+  <!-- Box of chocolates 3x3 grid -->
+  <rect x="80" y="60" width="240" height="195" rx="12" fill="#4E342E"/>
+  <rect x="86" y="66" width="228" height="183" rx="9" fill="#3E2723"/>
+  <!-- Pralines -->
+  <rect x="102" y="82" width="56" height="48" rx="8" fill="#6D4C41"/>
+  <ellipse cx="130" cy="106" rx="20" ry="16" fill="#BCAAA4"/>
+  <circle cx="130" cy="105" r="8" fill="#FFFAFC"/>
+  <rect x="172" y="82" width="56" height="48" rx="8" fill="#4A148C" opacity="0.7"/>
+  <ellipse cx="200" cy="106" rx="20" ry="16" fill="#CE93D8"/>
+  <circle cx="200" cy="104" r="6" fill="#C8A951"/>
+  <rect x="242" y="82" width="56" height="48" rx="8" fill="#1B5E20" opacity="0.7"/>
+  <ellipse cx="270" cy="106" rx="20" ry="16" fill="#A5D6A7"/>
+  <line x1="258" y1="100" x2="282" y2="112" stroke="#FFFAFC" stroke-width="1.5"/>
+  <line x1="282" y1="100" x2="258" y2="112" stroke="#FFFAFC" stroke-width="1.5"/>
+  <rect x="102" y="142" width="56" height="48" rx="8" fill="#BF360C" opacity="0.8"/>
+  <ellipse cx="130" cy="166" rx="20" ry="16" fill="#FF8A65"/>
+  <text x="130" y="170" font-family="sans-serif" font-size="14" fill="#FFFAFC" text-anchor="middle">♥</text>
+  <rect x="172" y="142" width="56" height="48" rx="8" fill="#F57F17" opacity="0.7"/>
+  <ellipse cx="200" cy="166" rx="20" ry="16" fill="#FFD54F"/>
+  <circle cx="200" cy="165" r="7" fill="#C8A951"/>
+  <rect x="242" y="142" width="56" height="48" rx="8" fill="#37474F" opacity="0.8"/>
+  <ellipse cx="270" cy="166" rx="20" ry="16" fill="#90A4AE"/>
+  <circle cx="270" cy="164" r="5" fill="#FFFAFC"/>
+  <rect x="102" y="202" width="56" height="46" rx="8" fill="#880E4F" opacity="0.7"/>
+  <ellipse cx="130" cy="225" rx="20" ry="16" fill="#F48FB1"/>
+  <rect x="172" y="202" width="56" height="46" rx="8" fill="#1A237E" opacity="0.7"/>
+  <ellipse cx="200" cy="225" rx="20" ry="16" fill="#7986CB"/>
+  <rect x="242" y="202" width="56" height="46" rx="8" fill="#33691E" opacity="0.7"/>
+  <ellipse cx="270" cy="225" rx="20" ry="16" fill="#AED581"/>
+  <text x="200" y="272" font-family="Georgia, serif" font-size="14" fill="#5D3A3A" text-anchor="middle" font-style="italic">Cioccolatini Assortiti</text>
+  <text x="200" y="290" font-family="sans-serif" font-size="10" fill="#9E6B6B" text-anchor="middle">Foto in arrivo ✦</text>
+</svg>

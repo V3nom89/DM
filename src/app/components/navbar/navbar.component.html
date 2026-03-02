@@ -1,0 +1,24 @@
+<nav class="navbar" [class.scrolled]="scrolled" [class.open]="menuOpen">
+  <div class="navbar__inner container">
+
+    <a class="navbar__brand" routerLink="/" (click)="closeMenu()">
+      <span class="brand-dm">✦</span>
+      <span class="brand-name">Dolce Momento</span>
+    </a>
+
+    <button class="navbar__burger" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="navbar__links" [class.active]="menuOpen">
+      <li><a routerLink="/"              routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/chi-sono"      routerLinkActive="active" (click)="closeMenu()">Chi Sono</a></li>
+      <li><a routerLink="/galleria"      routerLinkActive="active" (click)="closeMenu()">Galleria</a></li>
+      <li><a routerLink="/commissione"   routerLinkActive="active" (click)="closeMenu()">Commissione</a></li>
+      <li><a routerLink="/prezzi"        routerLinkActive="active" (click)="closeMenu()">Prezzi</a></li>
+      <li><a routerLink="/testimonianze" routerLinkActive="active" (click)="closeMenu()">Testimonianze</a></li>
+      <li><a routerLink="/contatti" class="btn-nav" (click)="closeMenu()">Contattami</a></li>
+    </ul>
+
+  </div>
+</nav>

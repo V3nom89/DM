@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#E3F2FD"/>
+  <!-- Christmas tree cookie -->
+  <polygon points="200,60 240,130 160,130" fill="#A5D6A7"/>
+  <polygon points="200,85 248,160 152,160" fill="#81C784"/>
+  <polygon points="200,110 255,190 145,190" fill="#66BB6A"/>
+  <rect x="185" y="190" width="30" height="25" rx="3" fill="#8D6E63"/>
+  <!-- Decorations -->
+  <circle cx="200" cy="65" r="5" fill="#C8A951"/>
+  <circle cx="175" cy="120" r="5" fill="#F48FB1"/>
+  <circle cx="225" cy="118" r="5" fill="#FF8A65"/>
+  <circle cx="163" cy="155" r="5" fill="#64B5F6"/>
+  <circle cx="200" cy="145" r="5" fill="#C8A951"/>
+  <circle cx="237" cy="155" r="5" fill="#F48FB1"/>
+  <!-- Snow on tree -->
+  <path d="M160,130 Q180,118 200,125 Q220,118 240,130" fill="none" stroke="#FFFAFC" stroke-width="3"/>
+  <path d="M152,160 Q176,148 200,155 Q224,148 248,160" fill="none" stroke="#FFFAFC" stroke-width="3"/>
+  <text x="200" y="255" font-family="Georgia, serif" font-size="15" fill="#5D3A3A" text-anchor="middle" font-style="italic">Biscotti Natalizi</text>
+  <text x="200" y="273" font-family="sans-serif" font-size="11" fill="#9E6B6B" text-anchor="middle">Foto in arrivo ✦</text>
+</svg>

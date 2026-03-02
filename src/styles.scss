@@ -1,0 +1,125 @@
+// ─── Palette ──────────────────────────────────────────
+$primary:       #F48FB1;
+$primary-light: #FCE4EC;
+$gold:          #C8A951;
+$gold-light:    #F5E6BE;
+$dark:          #5D3A3A;
+$white:         #FFFAFC;
+
+// ─── Typography ───────────────────────────────────────
+$font-title: 'Playfair Display', Georgia, serif;
+$font-body:  'Raleway', sans-serif;
+
+// ─── Breakpoints ──────────────────────────────────────
+$bp-mobile:  768px;
+$bp-tablet: 1024px;
+
+// ─── Reset & Base ─────────────────────────────────────
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: $font-body;
+  color: $dark;
+  background-color: $white;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-title;
+  color: $dark;
+  line-height: 1.25;
+}
+
+a {
+  color: $gold;
+  text-decoration: none;
+  transition: color .2s ease;
+  &:hover { color: darken($gold, 12%); }
+}
+
+img { max-width: 100%; display: block; }
+
+// ─── Utilities ────────────────────────────────────────
+.section-title {
+  font-family: $font-title;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: $gold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-family: $font-body;
+  font-size: 1.05rem;
+  color: lighten($dark, 20%);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.section-divider {
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, $primary, $gold);
+  border-radius: 2px;
+  margin: 0 auto 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, $primary, darken($primary, 10%));
+  color: $white;
+  padding: 0.85rem 2.2rem;
+  border-radius: 50px;
+  font-family: $font-body;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 4px 15px rgba($primary, 0.4);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba($primary, 0.5);
+    color: $white;
+  }
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: $gold;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-family: $font-body;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border: 2px solid $gold;
+  cursor: pointer;
+  transition: all .2s ease;
+  &:hover {
+    background: $gold;
+    color: $white;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.page-section {
+  padding: 5rem 0;
+}
+
+.bg-light-pink { background-color: $primary-light; }
+.bg-gold-light  { background-color: $gold-light; }
+.bg-white       { background-color: $white; }
+
+// ─── Star Rating ──────────────────────────────────────
+.stars { color: $gold; font-size: 1.1rem; letter-spacing: 2px; }

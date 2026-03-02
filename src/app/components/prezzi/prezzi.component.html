@@ -1,0 +1,51 @@
+<div class="page-hero">
+  <div class="container">
+    <h1 class="section-title">Prezzi</h1>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Listino indicativo – ogni dolce è un'opera unica</p>
+  </div>
+</div>
+
+<section class="page-section bg-white">
+  <div class="container">
+
+    <div class="nota-banner">
+      <span class="nota-icon">ℹ️</span>
+      <p>I prezzi indicati sono orientativi. Il costo finale dipende da dimensioni, numero di piani, complessità delle decorazioni e ingredienti speciali.
+         <a routerLink="/contatti">Contattami</a> per un preventivo personalizzato e gratuito.</p>
+    </div>
+
+    <div class="prezzi-grid">
+      <div class="prezzi-card" *ngFor="let cat of pricingCategories">
+        <div class="prezzi-card__header">
+          <span class="cat-icon">{{ cat.icon }}</span>
+          <h2>{{ cat.name }}</h2>
+        </div>
+        <div class="prezzi-card__body">
+          <div class="price-row" *ngFor="let item of cat.items">
+            <div class="price-row__left">
+              <span class="price-row__name">{{ item.name }}</span>
+              <span class="price-row__desc">{{ item.desc }}</span>
+            </div>
+            <span class="price-row__price">{{ item.price }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="extra-section">
+      <h2 class="section-title">Extra & Personalizzazioni</h2>
+      <div class="section-divider"></div>
+      <div class="extras-grid">
+        <div class="extra-item" *ngFor="let e of extras">
+          <span class="extra-icon">{{ e.icon }}</span>
+          <div>
+            <strong>{{ e.name }}</strong>
+            <span>{{ e.price }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

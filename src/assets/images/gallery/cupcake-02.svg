@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#FCE4EC"/>
+  <path d="M130 210 Q110 160 165 158 Q158 135 200 132 Q195 110 240 112 Q245 105 258 108 Q250 130 262 135 Q300 132 295 158 Q340 160 320 210 Z" fill="#B71C1C" opacity="0.85"/>
+  <rect x="148" y="210" width="128" height="45" rx="8" fill="#6D4C41"/>
+  <!-- Cream top -->
+  <path d="M148 170 Q200 140 252 170" fill="none" stroke="#FFFAFC" stroke-width="3"/>
+  <ellipse cx="200" cy="132" rx="35" ry="22" fill="#FFFAFC"/>
+  <circle cx="200" cy="122" r="15" fill="#FFFAFC"/>
+  <circle cx="200" cy="118" r="6" fill="#F48FB1"/>
+  <circle cx="200" cy="116" r="3" fill="#C8A951"/>
+  <!-- Sprinkles on cake -->
+  <line x1="175" y1="190" x2="180" y2="200" stroke="#FFFAFC" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="195" y1="185" x2="197" y2="197" stroke="#FFFAFC" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="215" y1="187" x2="218" y2="200" stroke="#FFFAFC" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="233" y1="193" x2="236" y2="205" stroke="#FFFAFC" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="200" y="272" font-family="Georgia, serif" font-size="15" fill="#5D3A3A" text-anchor="middle" font-style="italic">Cupcake Red Velvet</text>
+  <text x="200" y="290" font-family="sans-serif" font-size="11" fill="#9E6B6B" text-anchor="middle">Foto in arrivo ✦</text>
+</svg>

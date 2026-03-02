@@ -1,0 +1,65 @@
+<div class="page-hero">
+  <div class="container">
+    <h1 class="section-title">Dolci su Commissione</h1>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Come funziona il processo per ordinare il tuo dolce personalizzato</p>
+  </div>
+</div>
+
+<!-- COME FUNZIONA -->
+<section class="page-section bg-white">
+  <div class="container">
+    <h2 class="section-title">Come Funziona</h2>
+    <div class="section-divider"></div>
+
+    <div class="steps">
+      <div class="step" *ngFor="let step of steps; let i = index">
+        <div class="step__number">{{ i + 1 }}</div>
+        <div class="step__icon">{{ step.icon }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+        <div class="step__connector" *ngIf="i < steps.length - 1"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPI DI DOLCI -->
+<section class="page-section bg-light-pink">
+  <div class="container">
+    <h2 class="section-title">Cosa Posso Creare per Te</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Ogni dolce è unico, pensato su misura per la tua occasione</p>
+
+    <div class="dolci-grid">
+      <div class="dolce-card" *ngFor="let d of dolci">
+        <div class="dolce-card__icon">{{ d.icon }}</div>
+        <h3>{{ d.name }}</h3>
+        <p>{{ d.desc }}</p>
+        <ul>
+          <li *ngFor="let tag of d.tags">{{ tag }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMPI & INFO -->
+<section class="page-section bg-gold-light">
+  <div class="container info-section">
+    <div class="info-card" *ngFor="let info of infos">
+      <div class="info-card__icon">{{ info.icon }}</div>
+      <h3>{{ info.title }}</h3>
+      <p>{{ info.text }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="commissione-cta">
+  <div class="container">
+    <h2>Pronto a ordinare il tuo dolce?</h2>
+    <p>Compila il modulo di contatto e iniziamo a creare qualcosa di meraviglioso insieme.</p>
+    <a routerLink="/contatti" class="btn-primary">Contattami ora</a>
+  </div>
+</section>

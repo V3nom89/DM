@@ -1,0 +1,64 @@
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <p class="hero__eyebrow">Pasticceria Artigianale</p>
+    <h1 class="hero__title">Dolce Momento</h1>
+    <p class="hero__subtitle">Ogni dolce è un'opera d'arte creata con passione,<br>su misura per il tuo momento speciale.</p>
+    <div class="hero__cta">
+      <a routerLink="/commissione" class="btn-primary">Ordina il tuo dolce</a>
+      <a routerLink="/galleria" class="btn-outline">Sfoglia la galleria</a>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>Scopri di più</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- IN EVIDENZA -->
+<section class="page-section bg-light-pink featured">
+  <div class="container">
+    <h2 class="section-title">Le Nostre Creazioni</h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Dolci realizzati con ingredienti selezionati e tanto amore</p>
+
+    <div class="featured__grid">
+      <div class="featured__card" *ngFor="let item of featured">
+        <div class="card__img">
+          <img [src]="item.img" [alt]="item.name">
+          <span class="card__badge">{{ item.category }}</span>
+        </div>
+        <div class="card__body">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.desc }}</p>
+          <a routerLink="/galleria" class="card__link">Vedi in galleria →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERCHÉ SCEGLIERCI -->
+<section class="page-section bg-white why">
+  <div class="container">
+    <h2 class="section-title">Perché Scegliere Dolce Momento</h2>
+    <div class="section-divider"></div>
+    <div class="why__grid">
+      <div class="why__item" *ngFor="let w of whyUs">
+        <div class="why__icon">{{ w.icon }}</div>
+        <h3>{{ w.title }}</h3>
+        <p>{{ w.text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Hai un'occasione speciale in arrivo?</h2>
+    <p>Contattami per creare insieme il dolce dei tuoi sogni</p>
+    <a routerLink="/contatti" class="btn-primary">Inizia ora</a>
+  </div>
+</section>

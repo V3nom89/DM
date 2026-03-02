@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#E8F5E9"/>
+  <path d="M130 205 Q112 158 165 156 Q158 133 200 130 Q195 108 240 110 Q245 103 258 106 Q250 128 262 133 Q300 130 295 156 Q338 158 320 205 Z" fill="#FFF176" opacity="0.9"/>
+  <!-- Wrapper stripes -->
+  <line x1="148" y1="205" x2="160" y2="250" stroke="#F9A825" stroke-width="2"/>
+  <line x1="175" y1="205" x2="180" y2="250" stroke="#F9A825" stroke-width="2"/>
+  <line x1="200" y1="205" x2="200" y2="250" stroke="#F9A825" stroke-width="2"/>
+  <line x1="225" y1="205" x2="220" y2="250" stroke="#F9A825" stroke-width="2"/>
+  <line x1="252" y1="205" x2="240" y2="250" stroke="#F9A825" stroke-width="2"/>
+  <rect x="148" y="205" width="104" height="45" rx="8" fill="#F9A825" opacity="0.35"/>
+  <!-- Lemon frosting -->
+  <path d="M155 158 Q200 128 245 158" fill="none" stroke="#FFF9C4" stroke-width="2"/>
+  <ellipse cx="200" cy="128" rx="36" ry="20" fill="#FFF9C4"/>
+  <circle cx="200" cy="118" r="14" fill="#FFF176"/>
+  <!-- Lemon slice on top -->
+  <circle cx="200" cy="112" r="10" fill="#F9A825"/>
+  <circle cx="200" cy="112" r="7" fill="#FFF176"/>
+  <line x1="200" y1="105" x2="200" y2="119" stroke="#F9A825" stroke-width="1"/>
+  <line x1="193" y1="108" x2="207" y2="116" stroke="#F9A825" stroke-width="1"/>
+  <line x1="207" y1="108" x2="193" y2="116" stroke="#F9A825" stroke-width="1"/>
+  <text x="200" y="268" font-family="Georgia, serif" font-size="15" fill="#5D3A3A" text-anchor="middle" font-style="italic">Cupcake Limone</text>
+  <text x="200" y="288" font-family="sans-serif" font-size="11" fill="#9E6B6B" text-anchor="middle">Foto in arrivo ✦</text>
+</svg>

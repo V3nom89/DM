@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#FFF9C4"/>
+  <!-- 3 cupcakes -->
+  <!-- Left -->
+  <path d="M100 185 Q85 150 130 148 Q125 130 155 128 Q145 108 175 110 Q180 105 190 108 Q185 128 195 130 Q220 128 215 148 Q250 150 235 185 Z" fill="#FF8A65" opacity="0.8"/>
+  <rect x="118" y="185" width="98" height="35" rx="5" fill="#A1887F"/>
+  <!-- frosting -->
+  <ellipse cx="165" cy="115" rx="18" ry="12" fill="#F8BBD0"/>
+  <circle cx="165" cy="110" r="8" fill="#F48FB1"/>
+  <circle cx="163" cy="108" r="3" fill="#C8A951"/>
+  <!-- Middle -->
+  <path d="M155 178 Q140 143 185 141 Q180 123 210 121 Q200 101 230 103 Q235 98 245 101 Q240 121 250 123 Q275 121 270 141 Q305 143 290 178 Z" fill="#F48FB1" opacity="0.8"/>
+  <rect x="173" y="178" width="98" height="35" rx="5" fill="#8D6E63"/>
+  <ellipse cx="220" cy="108" rx="20" ry="13" fill="#B2EBF2"/>
+  <circle cx="220" cy="103" r="9" fill="#80DEEA"/>
+  <circle cx="218" cy="101" r="4" fill="#FFFAFC"/>
+  <!-- Right -->
+  <path d="M245 185 Q230 150 275 148 Q270 130 300 128 Q290 108 320 110 Q325 105 335 108 Q330 128 340 130 Q365 128 360 148 Q395 150 380 185 Z" fill="#CE93D8" opacity="0.8"/>
+  <rect x="263" y="185" width="98" height="35" rx="5" fill="#7B1FA2" opacity="0.6"/>
+  <ellipse cx="310" cy="115" rx="18" ry="12" fill="#E1BEE7"/>
+  <circle cx="310" cy="110" r="8" fill="#CE93D8"/>
+  <circle cx="308" cy="108" r="3" fill="#C8A951"/>
+  <text x="200" y="255" font-family="Georgia, serif" font-size="15" fill="#5D3A3A" text-anchor="middle" font-style="italic">Cupcakes Arcobaleno</text>
+  <text x="200" y="275" font-family="sans-serif" font-size="11" fill="#9E6B6B" text-anchor="middle">Foto in arrivo ✦</text>
+</svg>

@@ -1,0 +1,111 @@
+<div class="page-hero">
+  <div class="container">
+    <h1 class="section-title">Contatti</h1>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Scrivimi per un preventivo o per qualsiasi informazione</p>
+  </div>
+</div>
+
+<section class="page-section bg-white">
+  <div class="container contatti__layout">
+
+    <!-- FORM -->
+    <div class="contatti__form-wrap">
+      <h2>Invia un Messaggio</h2>
+
+      <form class="contact-form" (ngSubmit)="onSubmit()" #f="ngForm" *ngIf="!submitted">
+        <div class="form-group">
+          <label for="nome">Nome *</label>
+          <input id="nome" type="text" name="nome" placeholder="Il tuo nome"
+            [(ngModel)]="form.nome" required #nome="ngModel"
+            [class.invalid]="nome.invalid && nome.touched">
+          <span class="error" *ngIf="nome.invalid && nome.touched">Il nome è obbligatorio.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input id="email" type="email" name="email" placeholder="tua@email.it"
+            [(ngModel)]="form.email" required email #email="ngModel"
+            [class.invalid]="email.invalid && email.touched">
+          <span class="error" *ngIf="email.invalid && email.touched">Email non valida.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Tipo di dolce</label>
+          <select id="tipo" name="tipo" [(ngModel)]="form.tipo">
+            <option value="">Seleziona un tipo...</option>
+            <option *ngFor="let t of tipiDolce" [value]="t">{{ t }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="occasione">Occasione</label>
+          <input id="occasione" type="text" name="occasione" placeholder="Es. Compleanno, Matrimonio…"
+            [(ngModel)]="form.occasione">
+        </div>
+
+        <div class="form-group full-width">
+          <label for="messaggio">Messaggio *</label>
+          <textarea id="messaggio" name="messaggio" rows="5"
+            placeholder="Raccontami la tua idea: dimensioni, sapori, colori, data dell'evento…"
+            [(ngModel)]="form.messaggio" required #messaggio="ngModel"
+            [class.invalid]="messaggio.invalid && messaggio.touched"></textarea>
+          <span class="error" *ngIf="messaggio.invalid && messaggio.touched">Il messaggio è obbligatorio.</span>
+        </div>
+
+        <div class="form-action">
+          <button type="submit" class="btn-primary" [disabled]="f.invalid">Invia Messaggio</button>
+        </div>
+      </form>
+
+      <div class="success-message" *ngIf="submitted">
+        <span class="success-icon">🎉</span>
+        <h3>Messaggio inviato!</h3>
+        <p>Grazie per avermi contattata. Ti risponderò entro 24-48 ore. A presto!</p>
+        <button class="btn-outline" (click)="resetForm()">Invia un altro messaggio</button>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="contatti__info">
+      <h2>Dove Trovarmi</h2>
+
+      <div class="info-item" *ngFor="let item of contactInfo">
+        <div class="info-icon">{{ item.icon }}</div>
+        <div>
+          <strong>{{ item.label }}</strong>
+          <span>{{ item.value }}</span>
+        </div>
+      </div>
+
+      <div class="contatti__social">
+        <h3>Seguimi sui Social</h3>
+        <div class="social-links">
+          <a href="#" class="social-link ig" aria-label="Instagram">
+            <span>📸</span> Instagram
+          </a>
+          <a href="#" class="social-link fb" aria-label="Facebook">
+            <span>📘</span> Facebook
+          </a>
+        </div>
+      </div>
+
+      <div class="contatti__address">
+        <h3>📍 Laboratorio</h3>
+        <p>Via dei Fiori, 12<br>50100 Firenze (FI)<br>
+          <em>Su appuntamento</em>
+        </p>
+      </div>
+
+      <div class="contatti__orari">
+        <h3>🕐 Orari</h3>
+        <div class="orari-grid">
+          <span>Lunedì – Venerdì</span><span>9:00 – 18:00</span>
+          <span>Sabato</span><span>10:00 – 15:00</span>
+          <span>Domenica</span><span>Chiuso</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

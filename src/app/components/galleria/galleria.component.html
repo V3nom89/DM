@@ -1,0 +1,56 @@
+<div class="page-hero">
+  <div class="container">
+    <h1 class="section-title">Galleria</h1>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Un assaggio visivo delle mie creazioni</p>
+  </div>
+</div>
+
+<section class="page-section bg-white">
+  <div class="container">
+
+    <!-- Filtri -->
+    <div class="filters">
+      <button
+        *ngFor="let cat of categories"
+        class="filter-btn"
+        [class.active]="activeCategory === cat"
+        (click)="setCategory(cat)">
+        {{ cat }}
+      </button>
+    </div>
+
+    <!-- Griglia -->
+    <div class="gallery-grid">
+      <div
+        class="gallery-item"
+        *ngFor="let item of filteredItems"
+        (click)="openLightbox(item)">
+        <img [src]="item.img" [alt]="item.name">
+        <div class="gallery-item__overlay">
+          <span class="gallery-item__name">{{ item.name }}</span>
+          <span class="gallery-item__icon">🔍</span>
+        </div>
+        <span class="gallery-item__badge">{{ item.category }}</span>
+      </div>
+    </div>
+
+    <div class="gallery-empty" *ngIf="filteredItems.length === 0">
+      <p>Nessun dolce in questa categoria.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" *ngIf="lightboxItem" (click)="closeLightbox()">
+  <div class="lightbox__card" (click)="$event.stopPropagation()">
+    <button class="lightbox__close" (click)="closeLightbox()">✕</button>
+    <img [src]="lightboxItem.img" [alt]="lightboxItem.name">
+    <div class="lightbox__info">
+      <span class="lightbox__cat">{{ lightboxItem.category }}</span>
+      <h3>{{ lightboxItem.name }}</h3>
+      <p>{{ lightboxItem.desc }}</p>
+    </div>
+  </div>
+</div>
