@@ -18,6 +18,7 @@ export class GalleriaComponent {
   lightboxItem: GalleryItem | null = null;
 
   items: GalleryItem[] = [
+    { name: 'Tiramisù',               category: 'Torte',       img: 'assets/images/gallery/tiramisù.jpeg',     desc: 'Classico tiramisù artigianale con savoiardi, mascarpone e caffè.' },
     { name: 'Torta Floreale Rosa',    category: 'Torte',       img: 'assets/images/gallery/torta-01.svg',      desc: 'Torta a tre strati con decorazioni floreali in pasta di zucchero.' },
     { name: 'Torta Matrimonio',       category: 'Torte',       img: 'assets/images/gallery/torta-02.svg',      desc: 'Elegante torta nuziale a cinque piani, bianca e oro.' },
     { name: 'Torta Compleanno',       category: 'Torte',       img: 'assets/images/gallery/torta-03.svg',      desc: 'Torta colorata per festeggiare in grande stile.' },
